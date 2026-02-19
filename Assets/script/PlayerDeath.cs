@@ -13,9 +13,6 @@ public class PlayerDeath : MonoBehaviour
         // ตรวจว่าชนกับวัตถุที่มี Tag = Enemy หรือไม่
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // ทำลาย Player (Cube)
-            Destroy(gameObject);
-
             // โหลด Scene ปัจจุบันใหม่หลังหน่วงเวลา
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
